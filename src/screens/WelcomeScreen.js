@@ -17,16 +17,16 @@ export default function WelcomeScreen() {
   useEffect(() => {
     ring1padding.value = 0;
     ring2padding.value = 0;
-    setTimeout(
-      () => (ring1padding.value = withSpring(ring1padding.value + hp(10))),
-      100
-    );
-    setTimeout(
-      () => (ring2padding.value = withSpring(ring2padding.value + hp(10.5))),
-      300
-    );
+    // setTimeout(
+    //   () => (ring1padding.value = withSpring(ring1padding.value + hp(10))),
+    //   100
+    // );
+    // setTimeout(
+    //   () => (ring2padding.value = withSpring(ring2padding.value + hp(10.5))),
+    //   300
+    // );
 
-    setTimeout(() => navigation.navigate("Home"), 2500);
+    setTimeout(() => navigation.navigate("Home"), 100);
   }, []);
 
   return (
